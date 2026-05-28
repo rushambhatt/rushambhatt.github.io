@@ -3,6 +3,18 @@
 
 @import "minima";
 
+.footer-heading {
+  display: none;
+}
+
+.site-footer {
+  color: #f8fafc;
+}
+
+.site-footer a {
+  color: #38bdf8;
+}
+
 .site-header .site-title,
 .site-header .site-title:visited,
 .site-nav .page-link {
@@ -31,8 +43,4 @@ body {
 
 a {
   color: #38bdf8;
-}
-
-.footer-col-wrapper {
-  display: none;
 }
