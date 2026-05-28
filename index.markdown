@@ -3,9 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-title: Home
 ---
-<div class="about-page">
 
 # Rusham Bhatt
 
@@ -23,5 +21,3 @@ Write your main bio here.
 ## Contact
 
 Add email, GitHub, LinkedIn, etc.
-
-</div>
