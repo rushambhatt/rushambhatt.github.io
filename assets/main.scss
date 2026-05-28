@@ -3,6 +3,16 @@
 
 @import "minima";
 
+.site-header .site-title,
+.site-header .site-title:visited,
+.site-nav .page-link {
+  color: #ffffff;
+}
+
+.site-nav .page-link:hover {
+  color: #38bdf8;
+}
+
 /* Hide automatic page titles */
 .post-title {
   display: none;
@@ -21,4 +31,8 @@ body {
 
 a {
   color: #38bdf8;
+}
+
+.footer-col-wrapper {
+  display: none;
 }
