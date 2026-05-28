@@ -9,6 +9,7 @@ title: Home
     <div class="about-me-text">
     Hello world! My name is Rusham Raj Bhatt, and I am an incoming PhD student at the University of illinois Chicago.
     I hope you enjoy my page!
+    </div>
     <div class="image-block">
         <div class="profile-image">
             <img src="./assets/images/profile.jpeg" alt="Rusham Bhatt Graduation">
