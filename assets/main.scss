@@ -3,6 +3,12 @@
 
 @import "minima";
 
+/* Hide automatic page titles */
+.page-heading,
+.post-title {
+  display: none;
+}
+
 body {
   background-color: #e09c9c;
 }
