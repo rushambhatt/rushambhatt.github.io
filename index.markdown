@@ -1,20 +1,80 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: page
 title: Home
 ---
-<div class="home-page">
-    <div class="about-me-text">
-    Hello world! My name is Rusham Raj Bhatt, and I am an incoming PhD student at the University of illinois Chicago.
-    I hope you enjoy my page!
-    </div>
-    <div class="image-block">
-        <div class="profile-image">
-            <img src="./assets/images/profile.jpeg" alt="Rusham Bhatt Graduation">
+
+<div
+  class="portfolio-background"
+  style="background-image: linear-gradient(rgba(15, 23, 42, 0.65), rgba(15, 23, 42, 0.65)), url('/assets/images/salon-bg.jpeg');"
+>
+  <div class="horizontal-page">
+    <section class="slide-section" id="about-section">
+      <div class="home-page">
+        <div class="about-me-text">
+          <p>
+            Hello world! My name is Rusham Raj Bhatt, and I am an incoming PhD student at the University of Illinois Chicago.
+          </p>
+          <p>
+            I hope you enjoy my page!
+          </p>
+          <button class="slide-button" onclick="scrollToSection('journey-section')">
+            Learn more about me →
+          </button>
         </div>
-    </div>
+        <div class="image-block">
+          <div class="profile-image">
+            <img src="/assets/images/profile.jpeg" alt="Rusham Bhatt Graduation">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="slide-section" id="journey-section">
+      <div class="section-card">
+        <h2>My Research Journey</h2>
+        <div class="journey-content">
+          <div>
+            <img src="/assets/images/pointing.jpg" alt="Research presentation">
+          </div>
+          <div>
+            <p>
+              During my undergraduate studies, I worked on scientific software development,
+              bioinformatics, and machine learning across several research environments.
+            </p>
+          </div>
+        </div>
+        <div class="section-buttons">
+          <button class="slide-button" onclick="scrollToSection('about-section')">← Back</button>
+          <button class="slide-button" onclick="scrollToSection('personality-section')">Next →</button>
+        </div>
+      </div>
+    </section>
+    <section class="slide-section" id="personality-section">
+      <div class="section-card">
+        <h2>Outside the Lab</h2>
+        <div class="personality-content">
+          <div>
+            <p>
+              I am very goated at soccer you know.
+            </p>
+          </div>
+          <div>
+            <img src="/assets/images/pointing.jpg" alt="Soccer">
+          </div>
+        </div>
+        <div class="section-buttons">
+          <button class="slide-button" onclick="scrollToSection('journey-section')">← Back</button>
+        </div>
+      </div>
+    </section>
+  </div>
 </div>
 
- <!-- and I am very enthusiastic about robotics! During my undergraduate studies, I had the privilege of conducting research at the Protein Data Bank at Rutgers University-New Brunswick, Harvard Medical School, and Salk institute for Biological Studies, and at my beloved alma mater UMBC. My research spanned scientific software development, bioinformatics, and machine learning. During my free time, I enjoying playing video games and sports, such as pickleball and soccer, especially soccer I am such a die-hard fan :) -->
+<script>
+  function scrollToSection(sectionId) {
+    document.getElementById(sectionId).scrollIntoView({
+      behavior: "smooth",
+      inline: "start",
+      block: "nearest"
+    });
+  }
+</script>

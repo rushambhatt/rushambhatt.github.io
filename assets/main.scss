@@ -3,17 +3,40 @@
 
 @import "minima";
 
-.footer-heading {
-  display: none;
-}
+/* ---------- Global site styling ---------- */
 
-.site-footer {
+body {
+  background-color: #0f172a;
   color: #f8fafc;
 }
 
-.site-footer a {
+a {
   color: #38bdf8;
 }
+
+/* Hide automatic Minima page titles */
+.post-title {
+  display: none;
+}
+
+/* ---------- Background ---------- */
+
+.portfolio-background {
+  width: calc(100vw - 40px);
+  margin-left: calc(50% - 50vw + 20px);
+  margin-right: calc(50% - 50vw + 20px);
+
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-radius: 20px;
+  padding: 40px 0;
+  box-sizing: border-box;
+}
+
+/* ---------- Header / Nav ---------- */
 
 .site-header .site-title,
 .site-header .site-title:visited,
@@ -27,22 +50,73 @@
   color: #38bdf8;
 }
 
-/* Hide automatic page titles */
-.post-title {
+/* ---------- Footer ---------- */
+
+.footer-heading {
   display: none;
 }
 
-body {
-  background-color: #0f172a;
+.site-footer {
   color: #f8fafc;
 }
 
-.home-page {
+.site-footer a {
+  color: #38bdf8;
+}
+
+/* ---------- Page spacing ---------- */
+
+.page-content {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* ---------- Horizontal page layout ---------- */
+
+.horizontal-page {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  width: 100%;
+
+  scrollbar-width: none;
+}
+
+.horizontal-page::-webkit-scrollbar {
+  display: none;
+}
+
+.slide-section {
+  flex: 0 0 100%;
+  min-height: 75vh;
+  scroll-snap-align: start;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+/* ---------- Shared card styling ---------- */
+
+.home-page,
+.section-card {
   background: #1e293b;
   padding: 40px;
   border-radius: 16px;
   max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
 
+/* ---------- About / Home section ---------- */
+
+.home-page {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -69,8 +143,95 @@ body {
   object-fit: cover;
 }
 
+/* ---------- General section card ---------- */
+
+.section-card {
+  text-align: center;
+}
+
+.section-card h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* ---------- Buttons ---------- */
+
+.slide-button {
+  margin-top: 24px;
+  background: #38bdf8;
+  color: #0f172a;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 999px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.slide-button:hover {
+  background: #7dd3fc;
+}
+
+.section-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 28px;
+}
+
+/* ---------- Research journey section ---------- */
+
+.journey-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  text-align: left;
+}
+.journey-content > div {
+  flex: 1;
+}
+.journey-content img {
+  width: 100%;
+  max-width: 420px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+.journey-content p {
+  line-height: 1.7;
+}
+
+/* ---------- Personality section ---------- */
+
+.personality-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  text-align: left;
+}
+.personality-content > div {
+  flex: 1;
+}
+.personality-content img {
+  width: 100%;
+  max-width: 420px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+.personality-content p {
+  line-height: 1.7;
+}
+
+/* ---------- Mobile styling ---------- */
+
 @media screen and (max-width: 768px) {
-  .home-page {
+  .slide-section {
+    min-height: auto;
+    padding: 30px 16px;
+  }
+
+  .home-page,
+  .journey-content {
     flex-direction: column;
     text-align: center;
   }
@@ -78,8 +239,13 @@ body {
   .profile-image img {
     width: 220px;
   }
-}
 
-a {
-  color: #38bdf8;
+  .personality-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
 }
