@@ -108,7 +108,8 @@ a {
   background: #1e293b;
   padding: 40px;
   border-radius: 16px;
-  max-width: 1200px;
+  max-width: 1800px;
+  max-height: 80vh;
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
@@ -137,7 +138,7 @@ a {
 }
 
 .profile-image img {
-  width: 300px;
+  width: 500px;
   max-width: 100%;
   border-radius: 16px;
   object-fit: cover;
@@ -175,7 +176,6 @@ a {
   display: flex;
   justify-content: center;
   gap: 16px;
-  margin-top: 28px;
 }
 
 /* ---------- Research journey section ---------- */
@@ -184,15 +184,15 @@ a {
   display: flex;
   align-items: center;
   gap: 40px;
-  text-align: left;
+  text-align: center;
 }
 .journey-content > div {
   flex: 1;
 }
 .journey-content img {
-  width: 100%;
-  max-width: 420px;
-  height: 300px;
+  width: 500px;
+  max-width: 500px;
+  height: 600px;
   object-fit: cover;
   border-radius: 16px;
 }
@@ -202,25 +202,25 @@ a {
 
 /* ---------- Personality section ---------- */
 
-.personality-content {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  text-align: left;
-}
-.personality-content > div {
-  flex: 1;
-}
-.personality-content img {
-  width: 100%;
-  max-width: 420px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 16px;
-}
-.personality-content p {
-  line-height: 1.7;
-}
+// .personality-content {
+//   display: flex;
+//   align-items: center;
+//   gap: 40px;
+//   text-align: center;
+// }
+// .personality-content > div {
+//   flex: 1;
+// }
+// .personality-content img {
+//   width: 500px;
+//   max-width: 500px;
+//   height: 600px;
+//   object-fit: cover;
+//   border-radius: 16px;
+// }
+// .personality-content p {
+//   line-height: 1.7;
+// }
 
 /* ---------- Mobile styling ---------- */
 
@@ -240,9 +240,9 @@ a {
     width: 220px;
   }
 
-  .personality-grid {
-    grid-template-columns: 1fr;
-  }
+  // .personality-grid {
+  //   grid-template-columns: 1fr;
+  // }
 
   .section-buttons {
     flex-direction: column;
