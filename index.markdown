@@ -33,7 +33,7 @@ title: Home
       <div class="section-card">
         <div class="journey-content">
           <div>
-            <img src="/assets/images/pointing.jpg" alt="Research presentation">
+            <img src="/assets/images/research.jpeg" alt="Research presentation">
           </div>
           <div>
             <p>
