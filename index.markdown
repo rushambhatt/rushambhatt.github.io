@@ -12,15 +12,16 @@ title: Home
       <div class="home-page">
         <div class="about-me-text">
           <p>
-            Hi there, and welcome to my page! My name is Rusham Raj Bhatt, and I am enthusiastic about applying computational methods and machine learning to solve problems in multi-team robotics!
+            Hi there! My name is Rusham Raj Bhatt, and I am a first-year PhD student in the Bioinspired Robotics and Resilient Intelligence Laboratory in the Department of Mechanical and Industrial Engineering at the University of Illinois Chicago.
           </p>
           <p>
-            My journey begins this Fall at Chicago, where I will be
-            a first-year PhD student in the Bioinspired Robotics and Resilient Intelligence Laboratory in the Department of Mechanical and Industrial Engineering at the University of Illinois Chicago.
+            I am enthusiastic about applying computational methods and machine learning to solve problems in multi-team robotics!
           </p>
-          <button class="slide-button" onclick="scrollToSection('journey-section')">
-            Learn more about me →
-          </button>
+          <div class="section-buttons">
+            <button class="slide-button" onclick="scrollToSection('journey-section')">
+              Learn more about me →
+            </button>
+          </div>
         </div>
         <div class="image-block">
           <div class="profile-image">
@@ -32,10 +33,10 @@ title: Home
     <section class="slide-section" id="journey-section">
       <div class="section-card">
         <div class="journey-content">
-          <div>
+          <div class="journey-image">
             <img src="/assets/images/research.jpeg" alt="Research presentation">
           </div>
-          <div>
+          <div class="journey-text">
             <p>
               During my undergraduate studies, I worked on scientific software development,
               bioinformatics, and machine learning across several research environments.
@@ -45,15 +46,19 @@ title: Home
               Harvard Medical School, Salk Institute of Biological Studies, and my beloved alma mater the University of Maryland, Baltimore County.
             </p>
             <p>
-              Not only did these experiences taught me how to think and work like a researcher, they taught me resilience, courage, and staying optimistic
-              when experiments didn't work out. I hope to continue applying these lessons to my ongoing journey as a researcher and when facing difficulties in life.
+              Not only did these experiences teach me how to think and work like a researcher, they taught me resilience, courage, and staying optimistic
+              when experiments didn't work out.
             </p>
+            <div class="section-buttons">
+              <button class="slide-button" onclick="scrollToSection('about-section')">← Back</button>
+          <!-- <button class="slide-button" onclick="scrollToSection('personality-section')">Next →</button> -->
+            </div>
           </div>
         </div>
-        <div class="section-buttons">
+        <!-- <div class="section-buttons">
           <button class="slide-button" onclick="scrollToSection('about-section')">← Back</button>
-          <!-- <button class="slide-button" onclick="scrollToSection('personality-section')">Next →</button> -->
-        </div>
+          <button class="slide-button" onclick="scrollToSection('personality-section')">Next →</button>
+        </div> -->
       </div>
     </section>
     <!-- <section class="slide-section" id="personality-section">
