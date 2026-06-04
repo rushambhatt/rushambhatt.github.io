@@ -8,6 +8,7 @@
 body {
   background-color: #0f172a;
   color: #f8fafc;
+  padding-bottom: 52px;
 }
 
 a {
@@ -26,13 +27,13 @@ a {
   margin-left: calc(50% - 50vw + 20px);
   margin-right: calc(50% - 50vw + 20px);
 
-  min-height: 100vh;
+  min-height: calc(100vh - 120px);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
   border-radius: 20px;
-  padding: 40px 0;
+  padding: 24px 0;
   box-sizing: border-box;
 }
 
@@ -52,23 +53,47 @@ a {
 
 /* ---------- Footer ---------- */
 
-.footer-heading {
-  display: none;
-}
-
 .site-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  background: #0f172a;
   color: #f8fafc;
+
+  padding: 10px 20px;
+  border-top: 1px solid #334155;
+  box-sizing: border-box;
+
+  z-index: 1000;
 }
 
-.site-footer a {
-  color: #38bdf8;
+.custom-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+
+  font-size: 0.9rem;
+  font-weight: 600;
 }
+
+.custom-footer a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.custom-footer a:hover {
+  color: #7dd3fc;
+  text-decoration: underline;
+}
+
 
 /* ---------- Page spacing ---------- */
 
 .page-content {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 20px;
 }
 
 /* ---------- Horizontal page layout ---------- */
@@ -80,7 +105,6 @@ a {
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   width: 100%;
-
   scrollbar-width: none;
 }
 
@@ -90,14 +114,14 @@ a {
 
 .slide-section {
   flex: 0 0 100%;
-  min-height: 75vh;
+  min-height: calc(100vh - 170px);
   scroll-snap-align: start;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  padding: 40px 20px;
+  padding: 20px;
   box-sizing: border-box;
 }
 
@@ -108,9 +132,10 @@ a {
   background: #1e293b;
   padding: 40px;
   border-radius: 16px;
-  max-width: 1800px;
-  max-height: 80vh;
-  width: 100%;
+
+  width: min(1350px, 94%);
+  min-height: 540px;
+
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -119,10 +144,9 @@ a {
 
 .home-page {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 40px;
+  gap: 36px;
 }
 
 .about-me-text {
@@ -135,11 +159,12 @@ a {
   flex: 1;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .profile-image img {
-  width: 500px;
-  max-width: 100%;
+  width: min(430px, 100%);
+  max-height: 430px;
   border-radius: 16px;
   object-fit: cover;
 }
@@ -183,51 +208,46 @@ a {
 .journey-content {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 36px;
   text-align: center;
 }
+
 .journey-content > div {
   flex: 1;
 }
+
 .journey-content img {
-  width: 500px;
-  max-width: 500px;
-  height: 600px;
+  width: min(430px, 100%);
+  max-height: 430px;
   object-fit: cover;
   border-radius: 16px;
 }
+
 .journey-content p {
   line-height: 1.7;
 }
 
-/* ---------- Personality section ---------- */
-
-// .personality-content {
-//   display: flex;
-//   align-items: center;
-//   gap: 40px;
-//   text-align: center;
-// }
-// .personality-content > div {
-//   flex: 1;
-// }
-// .personality-content img {
-//   width: 500px;
-//   max-width: 500px;
-//   height: 600px;
-//   object-fit: cover;
-//   border-radius: 16px;
-// }
-// .personality-content p {
-//   line-height: 1.7;
-// }
-
 /* ---------- Mobile styling ---------- */
 
 @media screen and (max-width: 768px) {
+  .portfolio-background {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 0;
+    padding: 20px 0;
+  }
+
   .slide-section {
     min-height: auto;
-    padding: 30px 16px;
+    padding: 20px 12px;
+  }
+
+  .home-page,
+  .section-card {
+    width: 94%;
+    min-height: auto;
+    padding: 24px;
   }
 
   .home-page,
@@ -236,16 +256,24 @@ a {
     text-align: center;
   }
 
-  .profile-image img {
-    width: 220px;
+  .profile-image img,
+  .journey-content img {
+    width: 260px;
+    max-height: 320px;
   }
-
-  // .personality-grid {
-  //   grid-template-columns: 1fr;
-  // }
 
   .section-buttons {
     flex-direction: column;
     align-items: center;
+  }
+
+  body {
+    padding-bottom: 70px;
+  }
+
+  .custom-footer {
+    gap: 12px;
+    font-size: 0.8rem;
+    flex-wrap: wrap;
   }
 }
