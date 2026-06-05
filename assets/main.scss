@@ -250,19 +250,8 @@ a { // targets all anchor (link) elements on the site
 }
 
 /* ---------- Resume Page ---------- */
-.resume-page {
-  background: #1e293b;
-  padding: 32px;
-  border-radius: 16px;
-}
-
-.resume-button-wrapper {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-.resume-button {
+.resume-page .resume-button,
+.resume-page .resume-button:visited {
   display: inline-block;
   background: #38bdf8;
   color: #0f172a;
@@ -272,9 +261,17 @@ a { // targets all anchor (link) elements on the site
   text-decoration: none;
 }
 
-.resume-button:hover {
+.resume-page .resume-button:hover,
+.resume-page .resume-button:visited:hover {
   background: #7dd3fc;
   color: #0f172a;
+  text-decoration: none;
+}
+
+.resume-button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 /* ---------- Mobile styling ---------- */
