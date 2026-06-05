@@ -249,6 +249,34 @@ a { // targets all anchor (link) elements on the site
   text-align: left;
 }
 
+/* ---------- Resume Page ---------- */
+.resume-page {
+  background: #1e293b;
+  padding: 32px;
+  border-radius: 16px;
+}
+
+.resume-button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.resume-button {
+  display: inline-block;
+  background: #38bdf8;
+  color: #0f172a;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.resume-button:hover {
+  background: #7dd3fc;
+  color: #0f172a;
+}
+
 /* ---------- Mobile styling ---------- */
 
 @media screen and (max-width: 768px) {
