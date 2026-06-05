@@ -323,4 +323,24 @@ a { // targets all anchor (link) elements on the site
     font-size: 0.8rem;
     flex-wrap: wrap;
   }
+
+  .resume-page {
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .resume-button-wrapper {
+    margin-bottom: 16px;
+  }
+
+  .resume-page .resume-button,
+  .resume-page .resume-button:visited {
+    font-size: 0.9rem;
+    padding: 10px 14px;
+    text-align: center;
+  }
+
+  .resume-page embed {
+    height: 500px;
+  }
 }
