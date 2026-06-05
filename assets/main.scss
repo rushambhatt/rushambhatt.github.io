@@ -259,6 +259,7 @@ a { // targets all anchor (link) elements on the site
 .resume-button-wrapper {
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 .resume-button {
@@ -269,7 +270,6 @@ a { // targets all anchor (link) elements on the site
   border-radius: 999px;
   font-weight: 700;
   text-decoration: none;
-  margin-bottom: 20px;
 }
 
 .resume-button:hover {
